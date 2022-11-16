@@ -10,17 +10,18 @@ namespace BasicCorePrograming
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome To Swap the Numbers Problem");
-            Console.WriteLine("Enter a value of Number a ");
-            Console.WriteLine("Enter a value of Number b");
-            int a = Convert.ToInt32(Console.ReadLine());
-            int b = Convert.ToInt32(Console.ReadLine());
-            int Swap;
-            Swap = a;
-                a = b;
-                b = Swap;
-            Console.WriteLine("Number a is :" +a);
-            Console.WriteLine("Number b is :" +b);
+            Console.WriteLine("Welcome To Even Or odd Number Problem");
+            Console.WriteLine("Enter a Number ");
+            int number = Convert.ToInt32(Console.ReadLine());
+            if (number %2 == 0)
+            {
+                Console.WriteLine("Given Number is Even");
+            }
+            else
+            {
+                Console.WriteLine("Given Number is Odd");
+            }
+              
             Console.ReadLine();
         }
     }
