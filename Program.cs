@@ -10,15 +10,16 @@ namespace BasicCorePrograming
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome To Leap Year Program");
-            int BaseNumber = 2;
-            Console.WriteLine("Enter a power Value to check power");
-            int power = Convert.ToInt32(Console.ReadLine());
-            for(int i=1; i < power; i++)
+            Console.WriteLine("Welcome To Harmonic Number Problem");
+            Console.WriteLine("Enter a value ");
+            Random random = new Random();
+            double n= Convert.ToDouble(Console.ReadLine());
+            double result = 1;
+            for (int i = 1; i < n; i++)
             {
-                BaseNumber = BaseNumber * 2;
+                result += (float)1/i;
             }
-            Console.WriteLine(BaseNumber);
+            Console.WriteLine("Harmonic Value is :" +result);
             Console.ReadLine();
         }
     }
