@@ -10,19 +10,31 @@ namespace BasicCorePrograming
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome To Even Or odd Number Problem");
-            Console.WriteLine("Enter a Number ");
-            int number = Convert.ToInt32(Console.ReadLine());
-            if (number %2 == 0)
+            Console.WriteLine("Welcome To Vowal And Consonant Problem");
+            Console.WriteLine("Enter An Alphabet");
+            char Alphabet = Convert.ToChar(Console.ReadLine().ToLower());
+            switch (Alphabet)
             {
-                Console.WriteLine("Given Number is Even");
+                case 'a':
+                    Console.WriteLine("{0} is an Vowel", Alphabet);
+                    break;
+                case 'e':
+                    Console.WriteLine("{0} is an Vowel", Alphabet);
+                    break;
+                case 'i':
+                    Console.WriteLine("{0} is an Vowel", Alphabet);
+                    break;
+                case 'o':
+                    Console.WriteLine("{0} is an Vowel", Alphabet);
+                    break;
+                case 'u':
+                    Console.WriteLine("{0} is an Vowel", Alphabet);
+                    break;
+                default:
+                    Console.WriteLine("{0} is an Consonant", Alphabet);
+                    break;
             }
-            else
-            {
-                Console.WriteLine("Given Number is Odd");
-            }
-              
-            Console.ReadLine();
+                    Console.ReadLine();
         }
     }
 }
