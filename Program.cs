@@ -10,16 +10,22 @@ namespace BasicCorePrograming
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome To Harmonic Number Problem");
+            Console.WriteLine("Welcome To Factors Problem");
             Console.WriteLine("Enter a value ");
-            Random random = new Random();
-            double n= Convert.ToDouble(Console.ReadLine());
-            double result = 1;
-            for (int i = 1; i < n; i++)
+            int n = Convert.ToInt32(Console.ReadLine());
+            for (int i = 2; i*i<= n; i++)
             {
-                result += (float)1/i;
+                while (n % i == 0)
+                {
+                    n = n / i;
+                    Console.WriteLine(i + "");
+                }
+
             }
-            Console.WriteLine("Harmonic Value is :" +result);
+            if (n != 1)
+            {
+                Console.WriteLine(n);
+            }
             Console.ReadLine();
         }
     }
