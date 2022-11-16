@@ -11,18 +11,14 @@ namespace BasicCorePrograming
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To Leap Year Program");
-            Console.WriteLine("Enter a Year");
-            Random random = new Random();
-            int year = Convert.ToInt32(Console.ReadLine());
-            if ((year % 400 == 0) && ( year % 4 ==0) && ( year % 100 == 0))
+            int BaseNumber = 2;
+            Console.WriteLine("Enter a power Value to check power");
+            int power = Convert.ToInt32(Console.ReadLine());
+            for(int i=1; i < power; i++)
             {
-                Console.WriteLine("Year is a Leap Year");
-              
+                BaseNumber = BaseNumber * 2;
             }
-            else
-            {
-                Console.WriteLine("Year is Not a Leap Year");
-            }
+            Console.WriteLine(BaseNumber);
             Console.ReadLine();
         }
     }
