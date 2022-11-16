@@ -10,22 +10,15 @@ namespace BasicCorePrograming
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome To Factors Problem");
-            Console.WriteLine("Enter a value ");
-            int n = Convert.ToInt32(Console.ReadLine());
-            for (int i = 2; i*i<= n; i++)
-            {
-                while (n % i == 0)
-                {
-                    n = n / i;
-                    Console.WriteLine(i + "");
-                }
-
-            }
-            if (n != 1)
-            {
-                Console.WriteLine(n);
-            }
+            Console.WriteLine("Welcome To Quotient And Remainder Problem");
+            Console.WriteLine("Enter a value of divident ");
+            Console.WriteLine("Enter a value of devisor");
+            int divident = Convert.ToInt32(Console.ReadLine());
+            int devisor = Convert.ToInt32(Console.ReadLine());
+            int Quotient = divident / devisor;
+            int Remainder = divident % devisor;
+            Console.WriteLine("Remainder :" + Remainder);
+            Console.WriteLine("Quotient :" +Quotient);
             Console.ReadLine();
         }
     }
