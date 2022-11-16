@@ -10,29 +10,20 @@ namespace BasicCorePrograming
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome To Coin Flip Programe");
-            Console.WriteLine("Enter No.of Times Coin to be Flip");
+            Console.WriteLine("Welcome To Leap Year Program");
+            Console.WriteLine("Enter a Year");
             Random random = new Random();
-            int n = Convert.ToInt32(Console.ReadLine());
-            int Head = 0, Tail = 0;
-            for (int i = 0; i < n; i++)
+            int year = Convert.ToInt32(Console.ReadLine());
+            if ((year % 400 == 0) && ( year % 4 ==0) && ( year % 100 == 0))
             {
-                Double CoinFlip = random.NextDouble();
-                if (CoinFlip < 0.5)
-                {
-                    Tail++;
-                }
-                else
-                {
-                    Head++;
-                }
+                Console.WriteLine("Year is a Leap Year");
+              
             }
-            Double Headpercentage = Head * 100 / n;
-            Console.WriteLine($"Head Times : {Headpercentage}%");
-            Double Tailpercentage = Tail * 100 / n;
-            Console.WriteLine($"Tail Times: {Tailpercentage}%");
+            else
+            {
+                Console.WriteLine("Year is Not a Leap Year");
+            }
             Console.ReadLine();
-
         }
     }
 }
