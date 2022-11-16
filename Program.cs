@@ -10,31 +10,24 @@ namespace BasicCorePrograming
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome To Vowal And Consonant Problem");
-            Console.WriteLine("Enter An Alphabet");
-            char Alphabet = Convert.ToChar(Console.ReadLine().ToLower());
-            switch (Alphabet)
+            Console.WriteLine("Welcome To Largest Of Three Numbers Problem");
+            Console.WriteLine("Enter a Three Numbers");
+            int Number1 = Convert.ToInt32(Console.ReadLine());
+            int Number2 = Convert.ToInt32(Console.ReadLine());
+            int Number3 = Convert.ToInt32(Console.ReadLine());
+            if (Number1 > Number2 && Number1 > Number3)
             {
-                case 'a':
-                    Console.WriteLine("{0} is an Vowel", Alphabet);
-                    break;
-                case 'e':
-                    Console.WriteLine("{0} is an Vowel", Alphabet);
-                    break;
-                case 'i':
-                    Console.WriteLine("{0} is an Vowel", Alphabet);
-                    break;
-                case 'o':
-                    Console.WriteLine("{0} is an Vowel", Alphabet);
-                    break;
-                case 'u':
-                    Console.WriteLine("{0} is an Vowel", Alphabet);
-                    break;
-                default:
-                    Console.WriteLine("{0} is an Consonant", Alphabet);
-                    break;
+                Console.WriteLine("{0} is largest", Number1);
             }
-                    Console.ReadLine();
+            else if (Number2 > Number3 && Number2 > Number3)
+            {
+                Console.WriteLine("{0} is largets", Number2);
+            }
+            else
+            {
+                Console.WriteLine("{0} is largest", Number3);
+            }
+            Console.ReadLine();
         }
     }
 }
